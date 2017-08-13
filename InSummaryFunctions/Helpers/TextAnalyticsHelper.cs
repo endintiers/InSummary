@@ -56,10 +56,16 @@ namespace InSummaryFunctions.Helpers
             }
 
             string content = await response.Content.ReadAsStringAsync();
-            dynamic responsePayload = JsonConvert.DeserializeObject<dynamic>(content);
-            foreach (dynamic document in responsePayload.documents)
+            var jsresponse = JsonConvert.DeserializeObject<KeyPhrasesResponse>(content);
+
+            //dynamic responsePayload = JsonConvert.DeserializeObject<dynamic>(content);
+            //foreach (dynamic document in responsePayload.documents)
+            foreach(var document in jsresponse.documents)
             {
-                pageDict[document.id].KeyPhrases = document.keyPhrases;
+                var pageNum = 1;
+                int.TryParse(document.id, out pageNum);
+                pageDict[pageNum].KeyPhrases = string.Join(", ",document.keyPhrases);
+
                 foreach (string keyPhrase in document.keyPhrases)
                 {
                     int count;
@@ -109,5 +115,21 @@ namespace InSummaryFunctions.Helpers
             }
             return summary.ToString();
         }
+    }
+
+    public class KeyPhrasesResponse
+    {
+        public class Document
+        {
+            public List<string> keyPhrases { get; set; }
+            public string id { get; set; }
+        }
+        public class Error
+        {
+            public string id { get; set; }
+            public string message { get; set; }
+        }
+        public List<Document> documents { get; set; }
+        public List<Error> errors { get; set; }
     }
 }

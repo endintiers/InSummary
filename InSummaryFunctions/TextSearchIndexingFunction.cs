@@ -11,6 +11,9 @@ using InSummaryFunctions.Helpers;
 
 namespace InSummaryFunctions
 {
+    /// <summary>
+    /// Extract and/or OCR text from pdf blobs in a container, get key phrases and index for Azure Search
+    /// </summary>
     public static class TextSearchIndexingFunction
     {
         [FunctionName("TextSearchIndexing")]

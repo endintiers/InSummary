@@ -8,6 +8,7 @@
     <PackageReference Include="Microsoft.Azure.Search" Version="3.0.4" />
     <PackageReference Include="Microsoft.Azure.WebJobs" Version="2.1.0-beta1" />
     <PackageReference Include="Microsoft.Azure.WebJobs.Extensions" Version="2.1.0-beta1" />
+    <PackageReference Include="Microsoft.Azure.WebJobs.Extensions.ApiHub" Version="1.0.0-beta4" />
     <PackageReference Include="Microsoft.Azure.WebJobs.Extensions.Http" Version="1.0.0-beta1" />
     <PackageReference Include="Microsoft.Azure.WebJobs.ServiceBus" Version="2.1.0-beta1" />
     <PackageReference Include="Microsoft.ProjectOxford.Vision" Version="1.0.393" />
@@ -16,6 +17,7 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Web" />
   </ItemGroup>
   <ItemGroup>
