@@ -1,7 +1,9 @@
 {
-    "IsEncrypted": false,
+  "IsEncrypted": false,
   "Values": {
-    "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName=insummary;AccountKey=B5mqqQ3cyFrhdOZF0TikhJZQskY6Mgc0juvrZPvjxScBOxyG5yH3w6x3By+8fpI+Nvo/Hq2jOwkkyZ7qvl6/cg==",
-    "AzureWebJobsDashboard": "DefaultEndpointsProtocol=https;AccountName=insummary;AccountKey=B5mqqQ3cyFrhdOZF0TikhJZQskY6Mgc0juvrZPvjxScBOxyG5yH3w6x3By+8fpI+Nvo/Hq2jOwkkyZ7qvl6/cg=="
+    "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName=insummary;AccountKey=XXXXXXXXXX",
+    "AzureWebJobsDashboard": "DefaultEndpointsProtocol=https;AccountName=insummary;AccountKey=XXXXXXXXXX",
+    "InSummaryStorage": "DefaultEndpointsProtocol=https;AccountName=insummary;AccountKey=XXXXXXXXXX",
+    "OneDriveConnection": "https://1drv.ms/f/XXXXXXXXXX"
   }
 }

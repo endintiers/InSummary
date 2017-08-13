@@ -1,13 +1,11 @@
-﻿using System.IO;
+﻿using InSummaryFunctions.Helpers;
 using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Host;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using System.IO;
 using System.Text;
-using Microsoft.Azure.Search;
+using System.Threading.Tasks;
 using System.Web;
-using InSummaryFunctions.Helpers;
 
 namespace InSummaryFunctions
 {

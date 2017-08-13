@@ -3,8 +3,15 @@
     <TargetFramework>net461</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Remove="OneDriveSummarisationFunction.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="OneDriveSummarisationFunction.cs" />
+  </ItemGroup>
+  <ItemGroup>
     <PackageReference Include="AForge.Imaging" Version="2.2.5" />
     <PackageReference Include="iTextSharp" Version="5.5.11" />
+    <PackageReference Include="Microsoft.Azure.ApiHub.Sdk" Version="0.8.0-beta" />
     <PackageReference Include="Microsoft.Azure.Search" Version="3.0.4" />
     <PackageReference Include="Microsoft.Azure.WebJobs" Version="2.1.0-beta1" />
     <PackageReference Include="Microsoft.Azure.WebJobs.Extensions" Version="2.1.0-beta1" />
